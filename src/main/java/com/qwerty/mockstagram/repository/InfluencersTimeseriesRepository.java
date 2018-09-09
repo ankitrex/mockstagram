@@ -16,6 +16,6 @@ public interface InfluencersTimeseriesRepository extends CassandraRepository<Inf
 	 * @param id
 	 * @return
 	 */
-	@Query("select * from ankit.influencers_timeseries where id=?0")
+	@Query("select * from influencers_timeseries where id=?0")
 	public List<InfluencerTimeseries> findByInfluencerId(Integer id);
 }
