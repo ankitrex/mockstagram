@@ -150,6 +150,8 @@ public class MockstagramServiceImpl implements MockstagramService {
 	@Scheduled(cron = "0 0 1 * * *")
 	public void suspiciousInfluencers() throws InterruptedException {
 
+		logger.info("Suspicious influencer process started");
+
 		// fetch all the influencer IDs that need to be updated
 		List<Integer> ids = IntStream.range(startId, endId).boxed().collect(Collectors.toList());
 
@@ -171,6 +173,8 @@ public class MockstagramServiceImpl implements MockstagramService {
 		// await termination until all the threads have completed their
 		// execution
 		executorService.awaitTermination(Long.MAX_VALUE, TimeUnit.SECONDS);
+
+		logger.info("Suspicious influencer process ended");
 	}
 
 	private void checkInfluencerSuspicious(Influencer influencer) {
