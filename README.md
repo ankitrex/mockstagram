@@ -64,3 +64,5 @@ For example - mockstagram.user.id.start=1000000 and mockstagram.user.id.end=1010
 <li><b>/start-main</b> - To start the data refreshing process. <b>Not to be used directly. Just for debugging purposes.</b> Its already been replaced by a scheduler.</li>
 <li><b>/start-main</b> - To start the is_suspicious process. <b>Not to be used directly. Just for debugging purposes.</b> Its already been replaced by a scheduler.</li>
 </ul>
+
+<h3> Endpoint response formats - https://github.com/ankitrex/mockstagram/wiki/JSON-Response-Examples </h3>
