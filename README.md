@@ -54,3 +54,13 @@ For example - mockstagram.user.id.start=1000000 and mockstagram.user.id.end=1010
 </li><b>mockstagram.java.max.threads.main</b> - Number of threads for data updating process</li>
 </li><b>mockstagram.java.max.threads.proc-1</b> - Number of threads for is_suspicious process. Usually a bigger number since api response time is much higher</li>
 </ul>
+
+
+<h3>Controller Endpoints</h3>
+<ul>
+<li><b>/influencer/{influencerId}/timeseries-data</b> - Timeseries data of an influencer</li>
+<li><b>/influencer/{influencerId}</b> - Latest data of an influencer</li>
+<li><b>/average-follower-count</b> - Average follower count across influencers</li>
+<li><b>/start-main</b> - To start the data refreshing process. <b>Not to be used directly. Just for debugging purposes.</b> Its already been replaced by a scheduler.</li>
+<li><b>/start-main</b> - To start the is_suspicious process. <b>Not to be used directly. Just for debugging purposes.</b> Its already been replaced by a scheduler.</li>
+</ul>
